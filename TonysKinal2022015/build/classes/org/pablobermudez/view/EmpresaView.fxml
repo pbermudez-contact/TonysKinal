@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="994.0" style="-fx-background-color: #c57d56;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pablobermudez.controller.EmpresasController">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="547.0" prefWidth="219.0" style="-fx-background-color: #a65b3a;">
+         <children>
+            <Pane layoutX="-34.0" layoutY="-49.0" prefHeight="110.0" prefWidth="111.0" style="-fx-background-color: #c57d56; -fx-background-radius: 50;">
+               <opaqueInsets>
+                  <Insets bottom="50.0" left="50.0" right="50.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="37.0" layoutX="53.0" layoutY="58.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/regreso.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <VBox layoutX="9.0" layoutY="165.0" prefHeight="237.0" prefWidth="210.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="60.0" prefWidth="219.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Nuevo">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/agregar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="62.0" prefWidth="219.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Eliminar">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="60.0" prefWidth="219.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Editar">
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="25.0" fitWidth="25.0" onDragDetected="#editar" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#reporte" prefHeight="60.0" prefWidth="219.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Reporte">
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="117.0" fitWidth="111.0" layoutX="62.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/medio.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnPresupuesto" layoutX="12.0" layoutY="402.0" mnemonicParsing="false" onAction="#ventanaPresupuesto" prefHeight="62.0" prefWidth="200.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Presupuesto">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/reporte.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="246.0" layoutY="24.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="697.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="109.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="35.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="121.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="205.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="63.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="376.0" minWidth="10.0" prefWidth="159.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Código Empresa:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label prefHeight="19.0" prefWidth="111.0" text="Nombre Empresa:" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoEmpresa" editable="false" prefHeight="25.0" prefWidth="39.0" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="8.0" />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="txtNombreEmpresa" editable="false" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></TextField>
+            <Label text="Teléfono:" GridPane.columnIndex="4">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="3.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtTelefonoEmpresa" editable="false" prefHeight="25.0" prefWidth="132.0" GridPane.columnIndex="5">
+               <opaqueInsets>
+                  <Insets right="4.0" />
+               </opaqueInsets>
+            </TextField>
+         </children>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </GridPane>
+      <ImageView fitHeight="77.0" fitWidth="69.0" layoutX="931.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Pollito.png" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="RIGHT" layoutX="288.0" layoutY="74.0" text="Dirección:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDireccionEmpresa" editable="false" layoutX="355.0" layoutY="71.0" prefHeight="25.0" prefWidth="588.0" />
+      <TableView fx:id="tblEmpresas" layoutX="235.0" layoutY="135.0" onMouseClicked="#seleccionarElemento" prefHeight="346.0" prefWidth="727.0">
+        <columns>
+          <TableColumn fx:id="colCodigoEmpresa" prefWidth="85.0" text="Cod.Empresa" />
+          <TableColumn fx:id="colNombreEmpresa" prefWidth="125.0" text="Nombre Empresa" />
+            <TableColumn fx:id="colDireccionEmpresa" prefWidth="454.0" text="Dirección" />
+            <TableColumn fx:id="colTelefonoEmpresa" prefWidth="60.0" text="Teléfono" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

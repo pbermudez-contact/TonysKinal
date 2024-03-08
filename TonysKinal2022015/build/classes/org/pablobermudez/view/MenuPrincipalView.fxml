@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="929.0" style="-fx-background-color: #c57d56;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pablobermudez.controller.MenuPrincipalController">
+   <children>
+      <Circle fill="#a65b3a" layoutX="870.0" layoutY="309.0" radius="354.0" stroke="#c57d56" strokeType="INSIDE" />
+      <ImageView fitHeight="379.0" fitWidth="694.0" layoutX="437.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/HamburguesaMenu.png" />
+         </image>
+      </ImageView>
+      <MenuBar prefHeight="56.0" prefWidth="291.0" stylesheets="@../resource/TonysKinal.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Módulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresa" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductos" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="TipoEmpleado" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoPlato" text="TipoPlato" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaHasServicio" text="Productos Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaHasProductoEmpleado" text="Servicio Empleado" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Programador" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Circle fill="#a65b3a" layoutX="14.0" layoutY="500.0" radius="123.0" stroke="#c57d56" strokeType="INSIDE" />
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="739.0" layoutY="444.0" onMouseClicked="#ventanaMenuComida" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/BotonMenu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="157.0" fitWidth="184.0" layoutX="695.0" layoutY="38.0" onMouseClicked="#ventanaMenuComida" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Carte.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="713.0" layoutY="514.0" prefHeight="47.0" prefWidth="122.0" text="click en menu" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="851.0" prefWidth="615.0" style="-fx-background-color: #c57d56;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pablobermudez.controller.MenuComidaController">
+   <children>
+      <Circle fill="#a65b3a" layoutX="576.0" layoutY="-92.0" radius="180.0" stroke="#c57d56" strokeType="INSIDE" />
+      <Circle fill="#a65b3a" layoutX="-10.0" layoutY="892.0" radius="180.0" stroke="#c57d56" strokeType="INSIDE" />
+      <Circle fill="#a65b3a" layoutX="540.0" layoutY="735.0" radius="180.0" stroke="#c57d56" strokeType="INSIDE" />
+      <Circle fill="#a65b3a" layoutX="128.0" layoutY="403.0" radius="180.0" stroke="#c57d56" strokeType="INSIDE" />
+      <Circle fill="#a65b3a" layoutX="663.0" layoutY="318.0" radius="180.0" stroke="#c57d56" strokeType="INSIDE" />
+      <Circle fill="#a65b3a" layoutX="-43.0" layoutY="-98.0" radius="180.0" stroke="#c57d56" strokeType="INSIDE" />
+      <ImageView fitHeight="851.0" fitWidth="615.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/MenuComida%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="14.0" layoutY="8.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/regreso.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

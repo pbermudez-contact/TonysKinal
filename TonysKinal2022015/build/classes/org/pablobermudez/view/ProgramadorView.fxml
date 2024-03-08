@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="736.0" style="-fx-background-color: #a65b3a;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pablobermudez.controller.ProgramadorController">
+   <children>
+      <Circle fill="#c57d56" layoutX="867.0" layoutY="550.0" radius="280.0" stroke="#c57d56" strokeType="INSIDE" />
+      <Pane layoutX="-5.0" prefHeight="247.0" prefWidth="742.0" style="-fx-background-color: #a65b3a;" AnchorPane.rightAnchor="-1.0">
+         <children>
+            <Label layoutX="167.0" layoutY="11.0" prefHeight="53.0" prefWidth="443.0" text="Pablo Ernesto Bermudez Tobar">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="167.0" layoutY="38.0" prefHeight="86.0" prefWidth="518.0" text="Programador Junior con: Soluciones de código. Analizar los errores o bugs es parte importante de la programación. " wrapText="true">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Pane>
+      <Pane layoutX="-5.0" layoutY="-6.0" prefHeight="414.0" prefWidth="157.0" style="-fx-background-color: #c57d56;">
+         <children>
+            <Pane layoutX="-41.0" layoutY="-55.0" prefHeight="116.0" prefWidth="117.0" style="-fx-background-color: #a65b3a; -fx-background-radius: 50;">
+               <opaqueInsets>
+                  <Insets bottom="50.0" left="50.0" right="50.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="55.0" layoutX="51.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Pollito.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="116.0" fitWidth="74.0" layoutX="51.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Programador.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" layoutY="197.0" prefHeight="17.0" prefWidth="60.0" text="Contacto" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="217.0" prefHeight="34.0" prefWidth="117.0" text="Número: 47697898" />
+            <Label layoutX="8.0" layoutY="245.0" prefHeight="34.0" prefWidth="152.0" text="Correo: pbermudez122@gmail.com" wrapText="true" />
+            <Label layoutX="8.0" layoutY="279.0" text="Lugar: Centro Kinal Zona 3" wrapText="true" />
+            <Label layoutX="51.0" layoutY="303.0" text="Aptitudes">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="329.0" prefHeight="40.0" prefWidth="140.0" text="Bases De Datos Avanzado, Java Basico y Depuración." wrapText="true" />
+         </children>
+      </Pane>
+      <Label layoutX="164.0" layoutY="146.0" prefHeight="34.0" prefWidth="202.0" text="¿Qué es un Junior Developer?" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="178.0" prefHeight="53.0" prefWidth="487.0" text="Un Desarrollador Junior -o Junior Developer- es un desarrollador de software de nivel básico , que ayuda al equipo de desarrollo con todos los aspectos de diseño y codificación de software." wrapText="true" />
+      <Label layoutX="164.0" layoutY="260.0" text="Experiencia profesional">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="270.0" prefHeight="86.0" prefWidth="531.0" text="La experiencia profesional también es un aspecto que considerar para este perfil. Como se dijo anteriormente, no es un perfil que requiera muchos años de experiencia, pero generalmente si necesita al menos un par, ya que demostraría la persistencia que tiene para trabajar." wrapText="true" />
+      <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="677.0" layoutY="352.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/regreso.png" />
+         </image>
+      </ImageView>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </opaqueInsets>
+</AnchorPane>

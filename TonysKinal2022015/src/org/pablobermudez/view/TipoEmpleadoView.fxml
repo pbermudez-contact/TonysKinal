@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="887.0" style="-fx-background-color: #c57d56;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pablobermudez.controller.TipoEmpleadoController">
+   <children>
+      <AnchorPane prefHeight="547.0" prefWidth="219.0" style="-fx-background-color: #a65b3a;">
+         <children>
+            <Pane layoutX="-34.0" layoutY="-49.0" prefHeight="111.0" prefWidth="111.0" style="-fx-background-color: #c57d56; -fx-background-radius: 50;">
+               <opaqueInsets>
+                  <Insets bottom="50.0" left="50.0" right="50.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="37.0" layoutX="46.0" layoutY="59.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/regreso.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <VBox layoutX="9.0" layoutY="165.0" prefHeight="237.0" prefWidth="210.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="60.0" prefWidth="219.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Nuevo">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/agregar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="62.0" prefWidth="219.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Eliminar">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="60.0" prefWidth="219.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Editar">
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#reporte" prefHeight="60.0" prefWidth="219.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Reporte">
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="117.0" fitWidth="111.0" layoutX="62.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/medio.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="243.0" layoutY="56.0" text="CodTipoEmpleado:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="56.0" text="Descripción:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtCodTipoEmpleado" editable="false" layoutX="360.0" layoutY="52.0" prefHeight="25.0" prefWidth="111.0" />
+      <TextField fx:id="txtdescripcion" editable="false" layoutX="567.0" layoutY="52.0" prefHeight="25.0" prefWidth="282.0" />
+      <TableView fx:id="tblTipoEmpleado" layoutX="263.0" layoutY="128.0" onMouseClicked="#seleccionarElemento" prefHeight="362.0" prefWidth="589.0">
+         <columns>
+            <TableColumn fx:id="colTipoEmpleado" prefWidth="130.0" text="CodTipoEmpleado:" />
+            <TableColumn fx:id="descripcion" prefWidth="458.0" text="Descripción:" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
